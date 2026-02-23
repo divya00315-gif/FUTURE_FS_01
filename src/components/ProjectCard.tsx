@@ -12,19 +12,19 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="flex h-full flex-col overflow-hidden transition-shadow hover:shadow-xl">
-      <div className="relative aspect-video">
+    <Card className="group flex h-full flex-col overflow-hidden border-border transition-all hover:shadow-2xl hover:border-primary/50">
+      <div className="relative aspect-video overflow-hidden">
         <Image
           src={project.imageUrl}
           alt={project.title}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 50vw"
           data-ai-hint={project.imageHint}
         />
       </div>
       <CardHeader>
-        <CardTitle className="font-headline">{project.title}</CardTitle>
+        <CardTitle className="font-headline transition-colors group-hover:text-primary">{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
       </CardHeader>
       <CardContent className="flex-grow">
@@ -37,7 +37,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </CardContent>
       <CardFooter>
-        <Button asChild variant="outline">
+        <Button asChild>
           <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
             <Github className="mr-2 h-4 w-4" />
             View on GitHub

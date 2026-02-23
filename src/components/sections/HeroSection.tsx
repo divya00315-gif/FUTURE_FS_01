@@ -11,37 +11,55 @@ type HeroSectionProps = {
 export function HeroSection({ personalDetails }: HeroSectionProps) {
   return (
     <section id="home" className="bg-background">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-8 md:items-center">
-          <div className="space-y-4 text-center">
+      <div className="container mx-auto flex min-h-[calc(100vh-80px)] items-center justify-center px-4 md:px-6">
+        <div className="space-y-6 text-center">
+          <div
+            className="opacity-0 animate-fade-in-up"
+            style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
+          >
             <Badge variant="outline" className="text-md font-headline">
               Available for new opportunities
             </Badge>
-            <h1 className="font-headline text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              {personalDetails.name}
-            </h1>
-            <h2 className="font-headline text-2xl font-semibold text-primary">
-              {personalDetails.title}
-            </h2>
-            <p className="mx-auto max-w-lg text-foreground/80 md:text-xl">
-              {personalDetails.shortIntro}
-            </p>
-            <div className="flex justify-center gap-4">
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
-                <Link href="#contact">Contact Me</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <a href={personalDetails.resumeUrl} download="resume.pdf">Download Resume</a>
-              </Button>
-            </div>
-            <div className="flex justify-center gap-4 pt-4">
-              <Link href={personalDetails.github} aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                <Github className="h-8 w-8 text-foreground/70 transition-colors hover:text-primary" />
-              </Link>
-              <Link href={personalDetails.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-8 w-8 text-foreground/70 transition-colors hover:text-primary" />
-              </Link>
-            </div>
+          </div>
+          <h1
+            className="opacity-0 animate-fade-in-up font-headline text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl"
+            style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
+          >
+            {personalDetails.name}
+          </h1>
+          <h2
+            className="opacity-0 animate-fade-in-up font-headline text-3xl font-semibold text-primary"
+            style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}
+          >
+            {personalDetails.title}
+          </h2>
+          <p
+            className="opacity-0 animate-fade-in-up mx-auto max-w-2xl text-foreground/80 md:text-xl"
+            style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
+          >
+            {personalDetails.shortIntro}
+          </p>
+          <div
+            className="opacity-0 animate-fade-in-up flex justify-center gap-4"
+            style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}
+          >
+            <Button asChild size="lg">
+              <Link href="#contact">Contact Me</Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <a href={personalDetails.resumeUrl} download="resume.pdf">Download Resume</a>
+            </Button>
+          </div>
+          <div
+            className="opacity-0 animate-fade-in-up flex justify-center gap-6 pt-4"
+            style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}
+          >
+            <Link href={personalDetails.github} aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <Github className="h-8 w-8 text-foreground/70 transition-colors hover:text-primary" />
+            </Link>
+            <Link href={personalDetails.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-8 w-8 text-foreground/70 transition-colors hover:text-primary" />
+            </Link>
           </div>
         </div>
       </div>
