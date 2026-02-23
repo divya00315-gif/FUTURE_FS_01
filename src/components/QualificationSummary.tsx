@@ -55,7 +55,7 @@ export function QualificationSummary() {
         <Card className="mx-auto max-w-3xl">
           <CardHeader className="text-center">
             <Wand2 className="mx-auto h-10 w-10 text-primary" />
-            <CardTitle className="font-headline text-3xl">Generate Qualification Summary</CardTitle>
+            <CardTitle className="font-headline text-3xl bg-gradient-to-r from-accent-4 to-accent-1 bg-clip-text text-transparent">Generate Qualification Summary</CardTitle>
             <CardDescription className="md:text-lg">
               Use the power of AI to craft a compelling summary of your qualifications based on your profile.
             </CardDescription>

@@ -19,7 +19,7 @@ export function SkillsSection({ skills }: SkillsSectionProps) {
     <section id="skills" className="bg-bg-skills">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl space-y-4 text-center">
-          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">My Skills</h2>
+          <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl bg-gradient-to-r from-accent-3 to-accent-4 bg-clip-text text-transparent">My Skills</h2>
           <p className="text-foreground/80 md:text-xl/relaxed">
             A showcase of my technical abilities and tools I use to bring ideas to life.
           </p>

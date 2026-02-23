@@ -29,14 +29,14 @@
     --ring: 340 95% 68%;
     --radius: 0.5rem;
 
-    --bg-about: 285 40% 98%;
-    --bg-skills: 310 40% 97%;
-    --bg-projects: 205 40% 98%;
-    --bg-contact: 180 30% 97%;
-    --bg-ai-summary: 145 30% 98%;
+    --bg-about: 0 0% 0%;
+    --bg-skills: 0 0% 0%;
+    --bg-projects: 0 0% 0%;
+    --bg-contact: 0 0% 0%;
+    --bg-ai-summary: 0 0% 0%;
   }
   .dark {
-    --background: 260 30% 6%;
+    --background: 0 0% 0%;
     --foreground: 260 20% 98%;
     --card: 260 30% 10%;
     --card-foreground: 260 20% 98%;
@@ -60,11 +60,11 @@
     --input: 260 30% 20%;
     --ring: 310 100% 60%;
 
-    --bg-about: 285 25% 10%;
-    --bg-skills: 220 40% 12%;
-    --bg-projects: 180 40% 11%;
-    --bg-contact: 140 30% 10%;
-    --bg-ai-summary: 310 30% 12%;
+    --bg-about: 0 0% 0%;
+    --bg-skills: 0 0% 0%;
+    --bg-projects: 0 0% 0%;
+    --bg-contact: 0 0% 0%;
+    --bg-ai-summary: 0 0% 0%;
   }
 
   * {
