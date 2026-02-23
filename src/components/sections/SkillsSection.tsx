@@ -16,7 +16,7 @@ const iconColors = [
 
 export function SkillsSection({ skills }: SkillsSectionProps) {
   return (
-    <section id="skills" className="bg-background">
+    <section id="skills" className="bg-bg-skills">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl space-y-4 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">My Skills</h2>

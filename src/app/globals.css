@@ -28,6 +28,12 @@
     --input: 240 20% 90%;
     --ring: 340 95% 68%;
     --radius: 0.5rem;
+
+    --bg-about: 285 40% 98%;
+    --bg-skills: 310 40% 97%;
+    --bg-projects: 205 40% 98%;
+    --bg-contact: 180 30% 97%;
+    --bg-ai-summary: 145 30% 98%;
   }
   .dark {
     --background: 260 30% 6%;
@@ -53,6 +59,12 @@
     --border: 260 30% 20%;
     --input: 260 30% 20%;
     --ring: 310 100% 60%;
+
+    --bg-about: 285 20% 9%;
+    --bg-skills: 310 20% 8%;
+    --bg-projects: 205 20% 9%;
+    --bg-contact: 180 20% 8%;
+    --bg-ai-summary: 145 20% 9%;
   }
 
   * {

@@ -50,7 +50,7 @@ export function QualificationSummary() {
   };
 
   return (
-    <section id="ai-summary" className="bg-secondary">
+    <section id="ai-summary" className="bg-bg-ai-summary">
       <div className="container mx-auto px-4 md:px-6">
         <Card className="mx-auto max-w-3xl">
           <CardHeader className="text-center">

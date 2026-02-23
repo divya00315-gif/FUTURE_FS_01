@@ -5,7 +5,7 @@ export default {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    'src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     container: {
@@ -58,6 +58,11 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        'bg-about': 'hsl(var(--bg-about))',
+        'bg-skills': 'hsl(var(--bg-skills))',
+        'bg-projects': 'hsl(var(--bg-projects))',
+        'bg-contact': 'hsl(var(--bg-contact))',
+        'bg-ai-summary': 'hsl(var(--bg-ai-summary))',
       },
       borderRadius: {
         lg: "var(--radius)",

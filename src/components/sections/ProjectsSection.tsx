@@ -7,7 +7,7 @@ type ProjectsSectionProps = {
 
 export function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
-    <section id="projects" className="bg-secondary">
+    <section id="projects" className="bg-bg-projects">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl space-y-4 text-center">
           <h2 className="font-headline text-3xl font-bold tracking-tighter sm:text-4xl">My Projects</h2>
