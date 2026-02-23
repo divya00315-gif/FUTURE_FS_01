@@ -51,7 +51,7 @@ export function HeroSection({ personalDetails }: HeroSectionProps) {
               width={450}
               height={450}
               priority
-              className="rounded-full border-4 border-primary/50 object-cover shadow-lg"
+              className="rounded-full object-cover shadow-lg"
               data-ai-hint={personalDetails.imageHint}
             />
           </div>
