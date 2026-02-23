@@ -22,13 +22,13 @@ export function HeroSection({ personalDetails }: HeroSectionProps) {
             </Badge>
           </div>
           <h1
-            className="opacity-0 animate-fade-in-up font-headline text-5xl font-bold tracking-tighter sm:text-6xl md:text-7xl"
+            className="opacity-0 animate-fade-in-up bg-gradient-to-r from-primary to-accent bg-clip-text font-headline text-5xl font-bold tracking-tighter text-transparent sm:text-6xl md:text-7xl"
             style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
           >
             {personalDetails.name}
           </h1>
           <h2
-            className="opacity-0 animate-fade-in-up font-headline text-3xl font-semibold text-primary"
+            className="opacity-0 animate-fade-in-up bg-gradient-to-r from-primary/80 to-accent/80 bg-clip-text font-headline text-3xl font-semibold text-transparent"
             style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}
           >
             {personalDetails.title}
