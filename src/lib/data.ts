@@ -2,14 +2,13 @@ import type { PersonalDetails, Project, Skill, ContactMessage } from '@/lib/defi
 import { Code, Database, Smartphone, Cloud, PenTool, Linkedin, Github } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
-const heroImage = PlaceHolderImages.find(img => img.id === 'hero-image');
 const project1Image = PlaceHolderImages.find(img => img.id === 'project-1');
 const project2Image = PlaceHolderImages.find(img => img.id === 'project-2');
 const project3Image = PlaceHolderImages.find(img => img.id === 'project-3');
 const project4Image = PlaceHolderImages.find(img => img.id === 'project-4');
 
 export const personalDetails: PersonalDetails = {
-  name: 'V Divyashree',
+  name: 'Hello, this is V Divyashree',
   title: 'Full Stack Developer',
   shortIntro: 'A passionate 3rd-year engineering student with a knack for building elegant and efficient web applications.',
   about: `I am a dedicated and creative full-stack developer currently in my third year of an engineering program. With a strong foundation in both front-end and back-end technologies, I enjoy turning complex problems into simple, beautiful, and intuitive designs. I am passionate about learning new technologies and leveraging them to build high-quality software.
@@ -19,8 +18,8 @@ My journey in software development started with a simple "Hello, World!" and has
   resumeUrl: '/resume.pdf',
   linkedin: 'https://www.linkedin.com/',
   github: 'https://github.com/',
-  imageUrl: heroImage?.imageUrl ?? '',
-  imageHint: heroImage?.imageHint ?? 'professional portrait',
+  imageUrl: '',
+  imageHint: 'professional portrait',
 };
 
 export const skills: Skill[] = [
