@@ -9,7 +9,7 @@ const project3Image = PlaceHolderImages.find(img => img.id === 'project-3');
 const project4Image = PlaceHolderImages.find(img => img.id === 'project-4');
 
 export const personalDetails: PersonalDetails = {
-  name: 'Alex Doe',
+  name: 'hello this is V divyashree',
   title: 'Full Stack Developer',
   shortIntro: 'A passionate 3rd-year engineering student with a knack for building elegant and efficient web applications.',
   about: `I am a dedicated and creative full-stack developer currently in my third year of an engineering program. With a strong foundation in both front-end and back-end technologies, I enjoy turning complex problems into simple, beautiful, and intuitive designs. I am passionate about learning new technologies and leveraging them to build high-quality software.
