@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin } from 'lucide-react';
@@ -13,8 +12,8 @@ export function HeroSection({ personalDetails }: HeroSectionProps) {
   return (
     <section id="home" className="bg-background">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid gap-8 md:grid-cols-2 md:items-center">
-          <div className="space-y-4 text-center md:text-left">
+        <div className="grid gap-8 md:items-center">
+          <div className="space-y-4 text-center">
             <Badge variant="outline" className="text-md font-headline">
               Available for new opportunities
             </Badge>
@@ -24,10 +23,10 @@ export function HeroSection({ personalDetails }: HeroSectionProps) {
             <h2 className="font-headline text-2xl font-semibold text-primary">
               {personalDetails.title}
             </h2>
-            <p className="max-w-lg text-foreground/80 md:text-xl">
+            <p className="mx-auto max-w-lg text-foreground/80 md:text-xl">
               {personalDetails.shortIntro}
             </p>
-            <div className="flex justify-center gap-4 md:justify-start">
+            <div className="flex justify-center gap-4">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90">
                 <Link href="#contact">Contact Me</Link>
               </Button>
@@ -35,7 +34,7 @@ export function HeroSection({ personalDetails }: HeroSectionProps) {
                 <a href={personalDetails.resumeUrl} download="resume.pdf">Download Resume</a>
               </Button>
             </div>
-            <div className="flex justify-center gap-4 pt-4 md:justify-start">
+            <div className="flex justify-center gap-4 pt-4">
               <Link href={personalDetails.github} aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                 <Github className="h-8 w-8 text-foreground/70 transition-colors hover:text-primary" />
               </Link>
@@ -43,17 +42,6 @@ export function HeroSection({ personalDetails }: HeroSectionProps) {
                 <Linkedin className="h-8 w-8 text-foreground/70 transition-colors hover:text-primary" />
               </Link>
             </div>
-          </div>
-          <div className="flex justify-center">
-            <Image
-              src={personalDetails.imageUrl}
-              alt={personalDetails.name}
-              width={450}
-              height={450}
-              priority
-              className="rounded-full object-cover shadow-lg"
-              data-ai-hint={personalDetails.imageHint}
-            />
           </div>
         </div>
       </div>
